@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--  css   -->
+    <link rel="stylesheet" href="./css/c.css">
+    <!--  fontawsom -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!--  bootstrap  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+
+</head>
+
+<body>
+   
+
+    <div class="form m-auto py-5 w-75">
+
+        <div class="inputBox my-3">
+            <label for="name">Product Name :</label>
+            <input type="text" id="productName" class="form-control">
+
+            <div class="alert alert-danger d-none" id="nameAlert">Product Name Is Invalid!</div>
+
+        </div>
+        <div class="inputBox my-3">
+            <label for="price">Product Price :</label>
+            <input type="number" id="productPrice" class="form-control">
+
+            <div class="alert alert-danger d-none" id="priceAlert">Product Price Is Invalid!</div>
+
+        </div>
+        <div class="inputBox my-3">
+            <label for="Category">Product Category :</label>
+            <input type="text" id="productCategory" class="form-control">
+        </div>
+        <div class="inputBox my-3">
+            <label for="Discription">Product Discription</label>
+            <textarea type="text" id="productDiscription" class="form-control" rows="6"></textarea>
+        </div>
+
+        <button class="btn btn-outline-secondary my-3" id="addBtn"> Add Product</button>
+        
+    </div>
+
+    <div class="search w-50  m-auto ">
+        <input type="text" placeholder="Search..." class="form-control" onkeyup="searchProducts(this.value)">
+    </div>
+
+    <table class="table w-75 mx-auto my-5">
+        <thead>
+            <th>Index</th>
+            <th>Product Name</th>
+            <th>Product Price</th>
+            <th>Product Category </th>
+            <th>Product Discription</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </thead>
+        <tbody id="tbody">
+          
+          
+        </tbody>
+    </table>
+   
+
+
+
+
+    <script src="./js/j.js"></script>
+</body>
+
+</html>
